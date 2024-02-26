@@ -1,0 +1,90 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Funciones Maestro",
+    "dateExported": "2024-02-25T05:57:36.617Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "9ff23678-6a58-4ea4-a4db-38c76987ee36",
+            "colId": "9c2c9604-3be3-4dba-a0bd-a12d717b5909",
+            "containerId": "",
+            "name": "Agregar Curso",
+            "url": "localhost:3000/api/curso/agregar",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-02-25T05:24:26.345Z",
+            "modified": "2024-02-25T05:57:07.430Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombreCurso\": \"Estadistica\",\n  \"descripcion\": \"clase de esta\",\n  \"duracion\": \"1 hora y media\",\n  \"idMaestro\": \"\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "3242469b-f382-4dda-a435-740cd8995a5a",
+            "colId": "9c2c9604-3be3-4dba-a0bd-a12d717b5909",
+            "containerId": "",
+            "name": "Mostrar mis cursos",
+            "url": "localhost:3000/api/curso/idDelMaestro/65dacf62b0ec42b34611ca02",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-02-25T05:24:26.346Z",
+            "modified": "2024-02-25T05:34:48.868Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "2ac7f238-70fe-4780-bf5f-e7531917ae0d",
+            "colId": "9c2c9604-3be3-4dba-a0bd-a12d717b5909",
+            "containerId": "",
+            "name": "Editar Curso",
+            "url": "localhost:3000/api/curso/idCurso/65dacfadb0ec42b34611ca09",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-02-25T05:24:26.347Z",
+            "modified": "2024-02-25T05:57:24.131Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombreCurso\": \"Etica\",\n  \"duracion\": \"3 horas\",\n  \"descripcion\": \"clase de etica\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "b35bcbce-5c0c-41a1-9145-7abc8cf2e9d9",
+            "colId": "9c2c9604-3be3-4dba-a0bd-a12d717b5909",
+            "containerId": "",
+            "name": "Eliminar Curso",
+            "url": "localhost:3000/api/curso/eliminar/65dacfadb0ec42b34611ca09",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-02-25T05:24:26.348Z",
+            "modified": "2024-02-25T05:57:29.887Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
